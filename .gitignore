@@ -1,0 +1,16 @@
+lightning_logs/
+misc/
+save_model/
+save_model_aasp/
+save_model_coarse_attention/
+save_model_coarse_GatedCrossAttention/
+save_model_coarse_rotate_position/
+save_model_del_bbox/
+save_model_plus/
+save_model_plus-addema/
+save_model-se/
+vis_outputs/
+vis_outputs_del_bbox/
+vis_outputs_plus/
+eval-mosmed-se.log
+eval-qata-se.log

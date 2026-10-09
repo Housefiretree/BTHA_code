@@ -1,0 +1,28 @@
+TRAIN:
+  train_batch_size: 32
+  lr: 0.0003
+
+  valid_batch_size: 32
+
+  image_size: [224,224]
+
+  min_epochs: 20
+  max_epochs: 100
+  patience: 20
+
+  device: [1]
+
+  model_save_path: ./save_model_plus-addema
+  model_save_filename: medseg_plus_addema
+
+MODEL:
+  bert_type: /home/newdisk/ygliu1/yungeng/TeViA/models--microsoft--BiomedVLP-CXR-BERT-specialized/snapshots/5157bdba1437a3aed316dacb1a5b68edf96b9902
+  vision_type: /home/newdisk/ygliu1/yungeng/TeViA/models--facebook--convnext-tiny-224/snapshots/6166b7613034066690a621d8bf25ffdf181a34f0
+  project_dim: 768
+
+DATA:
+  train_root_path: /home/newdisk/ygliu1/yungeng/datasets/QaTa-COV19/QaTa-Covid19/Train_Folder_big   #QaTa-COV19-v2   MoNuSeg  breast_tumors  brain_tumors
+  train_csv_path: /home/newdisk/ygliu1/yungeng/datasets/QaTa-COV19/QaTa-Covid19/Train_Folder_big/processed_train.csv
+
+  test_root_path: /home/newdisk/ygliu1/yungeng/datasets/QaTa-COV19/QaTa-Covid19/Test_Folder
+  test_csv_path: /home/newdisk/ygliu1/yungeng/datasets/QaTa-COV19/QaTa-Covid19/Test_Folder/processed_test.csv
